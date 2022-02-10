@@ -1,11 +1,11 @@
 import info.gridworld.actor.Actor;
 
-public abstract class pet extends Actor{
+public abstract class Pet extends Actor{
     protected String name;
     protected int hp;
     protected int attack;
 
-    public pet(String name, int hp, int attack){
+    public Pet(String name, int hp, int attack){
         this.name = name;
         this.hp = hp;
         this.attack = attack;
