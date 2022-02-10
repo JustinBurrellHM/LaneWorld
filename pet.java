@@ -33,7 +33,7 @@ public abstract class Pet extends Actor{
     }
     
     public void battle(Pet opponent){
-        int damage = opponent.calculateDamage(opponent);
+        int damage = this.calculateDamage(opponent);
         opponent.changeHP(-damage);
     }
 
