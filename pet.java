@@ -11,7 +11,7 @@ public abstract class Pet extends Actor{
         this.attack = attack;
     }
 
-    abstract void ability();
+    public abstract void ability();
 
     public int getHp(){
         return hp;
@@ -33,8 +33,8 @@ public abstract class Pet extends Actor{
     }
     
     public void battle(Pet opponent){
-        int damage = opponent.calculateDamage(this);
-        this.changeHP(-damage);
+        int damage = opponent.calculateDamage(opponent);
+        opponent.changeHP(-damage);
     }
 
     public int calculateDamage(Pet opponent){
