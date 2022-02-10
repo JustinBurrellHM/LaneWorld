@@ -11,7 +11,7 @@ public abstract class Pet extends Actor{
         this.attack = attack;
     }
 
-    public abstract void ability();
+    // public abstract void ability();
 
     public int getHp(){
         return hp;

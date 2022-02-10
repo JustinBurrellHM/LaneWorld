@@ -4,7 +4,8 @@ public class Slug extends Pet{
     }
 
     public void battle(Pet opponent){
-        int damage = opponent.calculateDamage(this);
-        this.changeHP(-damage);
+        int damage = this.calculateDamage(opponent);
+        opponent.changeHP(-damage);
     }
 }
+
