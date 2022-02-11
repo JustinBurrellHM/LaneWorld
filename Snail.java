@@ -1,17 +1,12 @@
 public class Snail extends Pet {
     
     public Snail(){
-        super(Snail,3,8);
+        super("Snail",3,8);
     }
 
-    public void battle(){
-        int damage = opponent.calculateDamage(this);
-        this.changeHP(-damage);
+    public void battle(Pet opponent){
+        super.battle(opponent);
         changeHP(2);
     }
-
-
-
-
 
 }
