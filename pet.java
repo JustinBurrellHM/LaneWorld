@@ -20,7 +20,7 @@ public abstract class Pet extends Actor{
     public void changeHP(int change_health){
         hp += change_health;
         hp += def;
-    }
+    }       
     public int getAttack(){
         return attack;
     }
